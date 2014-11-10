@@ -1,6 +1,6 @@
 <% @articles.each do |article| %>
   <article>
     <h2><%= link_to article.title, article %></h2>
-    <%= truncate article.content, length: 80 %>
+    <%= article.content[0..100] %>
   </article>
 <% end %>
