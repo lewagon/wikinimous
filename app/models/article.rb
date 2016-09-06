@@ -1,9 +1,8 @@
 class Article < ActiveRecord::Base
-  validates_presence_of :title, :content
+  validates :title, presence: true
+  validates :content, presence: true
 
   def markdown_content
-    Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true)
-      .render(content)
-      .html_safe
+    Kramdown::Document.new(content).to_html.html_safe
   end
 end
