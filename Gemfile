@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.3.1'
 
-gem 'rails', '4.1.7'
+gem 'rails', "5.0.0.1"
 gem 'pg'
 gem 'thin', group: :production
 gem 'rails_12factor', group: :production
 
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 
@@ -22,6 +22,5 @@ end
 gem 'faker'
 gem 'ace-rails-ap'
 gem 'bootstrap_form'
-gem 'redcarpet'
-gem 'quiet_assets'
+gem 'kramdown'
 gem 'bootstrap-sass', '~> 3.3.0'
