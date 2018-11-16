@@ -1,16 +1,13 @@
 source 'https://rubygems.org'
 ruby '2.4.3'
 
-gem 'rails', "5.1.5"
+gem 'rails', "5.2.1"
 gem 'pg'
 gem 'thin', group: :production
-gem 'rails_12factor', group: :production
 
 gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'turbolinks'
 
 group :development do
   gem 'spring'
