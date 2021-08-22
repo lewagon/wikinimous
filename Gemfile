@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.6.5'
+ruby '2.7.4'
 
-gem 'rails', "5.2.1"
+gem 'rails', "~> 5.2"
 gem 'pg'
-gem 'thin', group: :production
+gem 'puma'
 
 gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
