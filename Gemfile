@@ -20,3 +20,9 @@ gem 'ace-rails-ap'
 gem 'bootstrap_form'
 gem 'kramdown'
 gem 'bootstrap-sass', '~> 3.4'
+
+group :production do
+  gem 'net-smtp', require: false
+  gem 'net-imap', require: false
+  gem 'net-pop', require: false
+end
