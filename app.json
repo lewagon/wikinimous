@@ -1,0 +1,8 @@
+{
+  "cron": [
+    {
+      "command": "bundle exec rake db:seed",
+      "schedule": "0 * * * *"
+    }
+  ]
+}

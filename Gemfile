@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '3.1.2'
+ruby '3.3.1'
 
-gem 'rails', "~> 6.1"
+gem 'rails', "~> 7.1"
 gem 'pg'
 gem 'puma'
 
@@ -10,8 +10,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 
 group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
   gem 'pry-byebug'
 end
 
@@ -19,10 +17,4 @@ gem 'faker'
 gem 'ace-rails-ap'
 gem 'bootstrap_form'
 gem 'kramdown'
-gem 'bootstrap-sass', '~> 3.4'
-
-group :production do
-  gem 'net-smtp', require: false
-  gem 'net-imap', require: false
-  gem 'net-pop', require: false
-end
+gem 'bootstrap', '~> 4'
