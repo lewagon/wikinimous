@@ -21,11 +21,7 @@ jobs:
           git_remote_url: "ssh://dokku@students.lewagon.engineering/wikinimous"
           git_push_flags: "--force -vvv"
 
-          # NOTE(ssaunier): having `id_ed25519`  `id_ed25519.pub` localy:
-          # cat ~/code/lewagon/glovebox/id_ed25519.pub | ssh root@students.lewagon.engineering dokku ssh-keys:add "ssaunier_github@dokku"
-          # ssh students ssh-keys:list
-          # cat ~/code/lewagon/glovebox/id_ed25519 | pbcopy # To be added to https://github.com/lewagon/wikinimous/settings/secrets/actions
-          ssh_private_key: ${{ secrets.DOKKU_SSH_PRIVATE_KEY }}
+          ssh_private_key: ${{ secrets.SCALEWAY_DOKKU_SSH_PRIVATE_KEY }}
 
           # cat ~/.ssh/known_hosts | grep "students.lewagon.engineering ssh-rsa"
           ssh_host_key: |
